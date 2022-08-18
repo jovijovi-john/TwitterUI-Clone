@@ -19,6 +19,8 @@ export default createGlobalStyle`
 
     *, input, button {
         font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 0;
+        background: none;
     }
 
     html {
@@ -31,7 +33,7 @@ export default createGlobalStyle`
         --search: #202327;
         --white: #D9D9D9;
         --gray: #7a7a7a;
-        --outline: #2F3336
+        --outline: #2F3336;
         --retweet: #00c06b;
         --like: #e8265e;
         --twitter: #33a1f2;
