@@ -8,8 +8,9 @@ import {
     Body,
 } from './styles';
 
-
+import StickyBox from "react-sticky-box";
 import FollowSugestion from '../FollowSugestion';
+import News from "../News";
 import List from "../List"
 
 const SideBar: React.FC = () => {
@@ -20,34 +21,48 @@ const SideBar: React.FC = () => {
                 <SearchIcon />
             </SearchWrapper>
 
-            <Body>
-                <List 
-                    title='Talvez você curta'
-                    elements={[
-                        <FollowSugestion
-                            name="Paulo Victor Borges"
-                            nickname="@pv_borges"
+            <StickyBox>
+                <Body>
+                    <List 
+                        title='Talvez você curta'
+                        elements={[
+                            <FollowSugestion
+                                name="Paulo Victor Borges"
+                                nickname="@pv_borges"
+                            />,
+                            <FollowSugestion
+                                name="André Filipe Barreto"
+                                nickname="@filipinho_barreto"
+                            />,  
+                            <FollowSugestion
+                                name="Iago Victor Silva"
+                                nickname="@iago_vipper"
                         />,
-                        <FollowSugestion
-                            name="André Filipe Barreto"
-                            nickname="@filipinho_barreto"
-                        />,  
-                        <FollowSugestion
-                            name="Iago Victor Silva"
-                            nickname="@iago_vipper"
-                    />,
-                    ]}
-                />
-                
-                <List 
-                    title='Talvez você curta'
-                    elements={[
-                        <h1>Test</h1>,
-                        <h1>Test</h1>,
-                        <h1>Test</h1>,
-                    ]}
-                />
-            </Body>
+                        ]}
+                    />
+                    
+                    <List 
+                        title='Talvez você curta'
+                        elements={[
+                            <News />, <News />, <News />,
+                        ]}
+                    />
+
+                    <List 
+                        title='Talvez você curta'
+                        elements={[
+                            <News />, <News />, <News />,
+                        ]}
+                    />
+
+                    <List 
+                        title='Talvez você curta'
+                        elements={[
+                            <News />, <News />, <News />,
+                        ]}
+                    />
+                </Body>
+            </StickyBox>
         </Container>
     );
 }
