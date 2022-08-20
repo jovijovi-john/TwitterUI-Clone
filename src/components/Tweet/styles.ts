@@ -132,7 +132,7 @@ export const Status = styled.div`
     display: flex;
     align-items: center;
 
-    font-size: 14px;
+        font-size: 14px;
 
     > svg {
         margin-right: 5px;
@@ -146,7 +146,7 @@ export const Status = styled.div`
     &:nth-child(2) { // selecionando o primeiro filho
         color: var(--retweet);
 
-        svg path {
+            svg path {
             fill: var(--retweet);
         }
     }
